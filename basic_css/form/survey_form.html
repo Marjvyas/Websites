@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="survey_form.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">Kindly fill the details about survey of my youtube channel</p>
+
+        <form id="survey-form">
+
+            <fieldset>
+                <label for="name">Name: <input required id="name" type="text" placeholder="Enter your name"></label>
+                <label for="email">Email: <input required id="email" type="email" placeholder="Enter your email"></label>
+                <label for="number">Age: <input id="number" type="number" placeholder="Age" min="13" max="120"></label>
+                <label for="dropdown">Occupation: <select id="dropdown">
+                <option>select one</option>
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Employee</option>
+                <option>retired</option>
+                <option>Other</option>
+                </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Are you enjoing my channel?</legend>
+                <label for="response"> 
+                <input class="inline" id="response" type="radio" name="radio1">Very Much</label>
+                <label for="response1"> 
+                <input class="inline" id="response1" type="radio" name="radio1">Not Much</label>
+                <label for="response2"> 
+                <input class="inline" id="response2" type="radio" name="radio1">Not At All</label>
+            </fieldset>
+            <fieldset>
+                <legend>What should I improve?</legend>
+                <label for="checkbox"> 
+                    <input class="inline" id="checkbox" type="checkbox" value="video">Video Quality
+                </label>
+                <label for="checkbox1"> 
+                    <input class="inline" id="checkbox1" type="checkbox" value="voice">Voice Quality
+                </label>
+                <label for="checkbox2"> 
+                    <input class="inline" id="checkbox2" type="checkbox" value="speed">Speed of the video
+                </label>
+                <label for="checkbox3"> 
+                    <input class="inline" id="checkbox3" type="checkbox" value="time">Time Duration
+                </label>
+                <label for="checkbox4"> 
+                    <input class="inline" id="checkbox4" type="checkbox" value="Content">Content
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Any comments or suggestions?</legend>
+                <label for="textarea"> 
+                    <textarea id="textarea" placeholder="Enter your comment here..." rows="5" cols="53"></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit"></button>
+        </form>
+    </div>
+    
+  </body>
+</html>
